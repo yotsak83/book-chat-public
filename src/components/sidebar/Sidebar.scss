@@ -1,0 +1,109 @@
+.sidebar {
+  display: flex;
+  flex: 0.3; /* 35% for sidebars */
+  // height: 100vh;
+  // background-color: #e5e5ad;
+
+  .sidebarLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center items vertically */
+    background-color: #cac3c3;
+    padding: 7px 15px;
+  }
+
+  .sidebarRight {
+    background-color: #efefef;
+    width: 350px;
+    position: relative;
+    flex-grow: 1;
+
+    .sidebarTop {
+      color: #4c4949;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .sidebarBooks {
+      padding: 13px;
+
+      .sidebarBooksHeader {
+        color: #7b7c85;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+
+        .sidebarHeader {
+          display: flex;
+        }
+
+        .sidebarAddIcon {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .sidebarFooter {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 93%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid #7b7c85;
+      margin-top: -3px;
+
+      .sidebarAccount {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 60px;
+          border-radius: 50%;
+          margin: 10px;
+        }
+
+        .accountName {
+          margin-left: 5-x;
+
+          h4 {
+            color: #7b7c85;
+            font-weight: 5--;
+          }
+
+          span {
+            color: #7b7c85;
+          }
+        }
+      }
+
+      .sidebarVoice {
+        display: flex;
+        align-items: center;
+        color: #7b7c85;
+      }
+    }
+  }
+
+  .serverIcon {
+    width: 60px;
+    height: 60px;
+    background-color: #713f3f;
+    border-radius: 9999px;
+    position: relative;
+    margin-top: 7px;
+
+    img {
+      position: absolute;
+      width: 50px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
